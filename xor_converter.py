@@ -2,10 +2,17 @@ from itertools import cycle
 
 name_file_crypted = 'FICHIERS/PB.txt'
 name_file_decrypted = 'FICHIERS/PA_decrypted.txt'
-key="b'CHFYJQ'"
+key=b'CHFYJQ'
 
 def xor_operation(data, key):
     return bytes(a ^ b for a, b in zip(data, cycle(key)))
 
-with open(name_file_crypted, 'rb') as encrypted_file, open(name_file_decrypted, 'wb') as decrypted_file:
-    decrypted_file.write(xor_operation(encrypted_file.read(), b'CHFYJQ'))
+
+def main(name_file_crypted_in,key_in,name_file_decrypted_out):
+    with open(name_file_crypted_in, 'rb') as encrypted_file, open(name_file_decrypted_out, 'wb') as decrypted_file:
+        decrypted_file.write(xor_operation(encrypted_file.read(), key_in))
+
+
+if __name__ == "__main__":
+    main(name_file_crypted_in=name_file_crypted,key_in=key,name_file_decrypted_out=name_file_decrypted)
+
