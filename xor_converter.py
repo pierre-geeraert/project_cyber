@@ -1,3 +1,4 @@
+import sys
 from itertools import cycle
 
 name_file_crypted = 'FICHIERS/PB.txt'
@@ -16,3 +17,5 @@ def main(name_file_crypted_in,key_in,name_file_decrypted_out):
 if __name__ == "__main__":
     main(name_file_crypted_in=name_file_crypted,key_in=key,name_file_decrypted_out=name_file_decrypted)
 
+#main(name_file_crypted_in='FICHIERS/PA.txt',key_in=key,name_file_decrypted_out='FICHIERS/PA_decrypted.txt')
+main(key_in=sys.argv[1],name_file_crypted_in=sys.argv[2],name_file_decrypted_out=sys.argv[3])
