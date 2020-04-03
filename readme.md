@@ -30,9 +30,9 @@ python wgen.py  -chr=abcdefghijklmnopqrstuvwxyz -min=1 -max=15 -out=wordlist.txt
 
 ## test a password for a specific file
 ```
-python xor_converter.py "12345" "PA.txt" "PA_decrypted.txt"
+python xor_converter.py "PA.txt" "PA_decrypted.txt"
 ```
-Where 12345 is the password <br/> 
+Where the password is in the code source<br/> 
 PA.txt is the encrypted file <br/> 
 PA_decrypted.txt will be the decrypted file
 
