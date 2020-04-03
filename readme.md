@@ -40,8 +40,8 @@ PA_decrypted.txt will be the decrypted file
 ```
 python word_checker.py "liste_francais.txt" "ISO-8859-1" "FICHIERS/PA_decrypted.txt" "ISO-8859-1"
 ```
-where liste_francais.txt is the list wit some french words
-where the first "ISO-8859-1" is the encoding of the list with some words
-where "FICHIERS/PA_decrypted.txt" is the decrypted file
-where  the second "ISO-8859-1"  is the encoding of the decrypted file
+where liste_francais.txt is the list wit some french words <br/>
+where the first "ISO-8859-1" is the encoding of the list with some words<br/>
+where "FICHIERS/PA_decrypted.txt" is the decrypted file<br/>
+where  the second "ISO-8859-1"  is the encoding of the decrypted file<br/>
  
